@@ -1,0 +1,15 @@
+service: "service.py:SeattleEnergyService"
+labels:
+  owner: "moi"
+  project: "seattle_energy"
+include:
+  - "service.py"
+  - "features.csv"
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - numpy
+    - pydantic
+models:
+  - "seattle_energy_pipeline:latest"

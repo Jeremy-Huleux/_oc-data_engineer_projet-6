@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "projet_6"
+version = "0.1.0"
+description = "Projet 6 OpenClassrooms"
+authors = ["Jérémy H. <huleux.jeremy@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.3"
+ipywidgets = "^8.1"
+numpy = "^2.0"
+matplotlib = "^3.8"
+seaborn = "^0.13"
+scikit-learn = "^1.5"
+jupyter = "^1.1"
+ipykernel = "^7.1"
+scipy = "^1.16.3"
+bentoml = "^1.4.33"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

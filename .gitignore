@@ -1,0 +1,18 @@
+# Ignore l'environnement virtuel
+.venv/
+
+# Ignore les fichiers de cache Python
+__pycache__/
+
+# Ignore les données (Trop lourd pour GitHub)
+*.csv
+
+# Ignore les fichiers de configuration IDE
+.vscode/
+.idea/
+
+# Ignore les modèles sauvegardés en local
+*.bentomodel
+
+# Ignore les checkpoints ipynb
+/.ipynb_checkpoints
