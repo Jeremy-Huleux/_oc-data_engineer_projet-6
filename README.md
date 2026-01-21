@@ -14,7 +14,7 @@
 
 Ce projet déploie une **API de Machine Learning** capable de prédire la consommation annuelle d'énergie (`SiteEnergyUse(kBtu)`) d'un bâtiment en fonction de ses caractéristiques structurelles.
 
-L'architecture repose sur une approche **MLOps** rigoureuse :
+L'architecture repose sur une approche **MLOps** :
 1.  **ETL Automatisé** : Nettoyage et transformation des données brutes.
 2.  **Modélisation** : Entraînement d'un `RandomForestRegressor` optimisé.
 3.  **Mise en Production** : API REST sécurisée via BentoML et conteneurisée avec Docker.
@@ -25,7 +25,6 @@ L'architecture repose sur une approche **MLOps** rigoureuse :
 
 ```bash
 Seattle-Energy-Prediction/
-├── 📂 data/                    # (Ignoré par git) Données brutes et nettoyées
 ├── 📜 preprocess_data.py       # Script ETL : Nettoyage et Feature Engineering
 ├── 📜 save_model.py            # Script ML : Entraînement et sauvegarde BentoML
 ├── 📜 service.py               # Script API : Logique de l'API et Validation Pydantic
