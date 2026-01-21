@@ -37,6 +37,7 @@ Seattle-Energy-Prediction/
 ├── 📓 template_modelistation_supervisee.ipynb  # Notebook d'analyse et modélisation
 ├── 📊 Projet Seattle.pptx                      # Support de présentation du projet
 └── 📜 README.md                                # Documentation du projet
+```
 
 ## ⚙️ Installation
 
