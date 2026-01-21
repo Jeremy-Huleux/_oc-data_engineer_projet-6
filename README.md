@@ -102,7 +102,7 @@ poetry run python save_model.py
 ### 4. Lancement de l’API (Mode Développement)
 
 ```bash
-poetry run bentoml serve service:SeattleEnergyService --reload
+bentoml serve service:SeattleEnergyService --reload
 ```
 
 📍 **Swagger UI** :  
@@ -115,7 +115,7 @@ poetry run bentoml serve service:SeattleEnergyService --reload
 ### 1. Construire le Bento
 
 ```bash
-poetry run bentoml build
+bentoml build
 ```
 
 📌 Notez le **TAG généré** (ex : `seattle_energy_service:xyz123`).
@@ -125,7 +125,7 @@ poetry run bentoml build
 ### 2. Créer l’image Docker
 
 ```bash
-poetry run bentoml containerize seattle_energy_service:VOTRE_TAG
+bentoml containerize seattle_energy_service:VOTRE_TAG
 ```
 
 ---
@@ -169,6 +169,35 @@ POST /predict
 ```
 
 ---
+
+### ✅ Valeurs Autorisées (Enums)
+
+Pour garantir la fiabilité du modèle, certains champs n'acceptent qu'une liste restreinte de valeurs. L'API validera automatiquement ces champs et renverra une erreur explicite si une valeur inconnue est fournie.
+
+#### 1. `BuildingType` (Type de bâtiment)
+* `NonResidential`
+* `Nonresidential COS`
+* `Nonresidential WA`
+* `Campus`
+* `SPS-District K-12`
+
+#### 2. `Neighborhood` (Quartier)
+*L'API gère automatiquement la casse (majuscules/minuscules).*
+
+* `DOWNTOWN`
+* `SOUTHEAST`
+* `NORTHEAST`
+* `EAST`
+* `CENTRAL`
+* `NORTH`
+* `MAGNOLIA / QUEEN ANNE`
+* `LAKE UNION`
+* `GREATER DUWAMISH`
+* `BALLARD`
+* `NORTHWEST`
+* `SOUTHWEST`
+* `DELRIDGE`
+* `DELRIDGE NEIGHBORHOODS`
 
 ## 👤 Auteur
 
